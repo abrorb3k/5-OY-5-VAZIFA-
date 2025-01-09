@@ -234,12 +234,12 @@ edit &&  edit.addEventListener('click',function(){
   block.setAttribute('contenteditable',true)
   block.focus();
   edit.style.display='none'
-  edit.style.display = "block";
+  savee.style.display = "block"
 })
 savee && savee.addEventListener('click',function(){
   block.removeAttribute('contenteditable') 
   edit.style.display='block'
-  edit.style.display = "none";
+  savee.style.display = "none";
 })
 
 
@@ -250,9 +250,9 @@ savee && savee.addEventListener('click',function(){
 // Ishlatiladigan mavzular: value, alert.
     const password = document.getElementById("password");
     const checkpassword = document.getElementById("checkpassword");
-    const btn = document.getElementById("btn");
-   btn &&
-     btn.addEventListener("click", function () {
+    const btn333 = document.getElementById("btn333");
+   btn333 &&
+     btn333.addEventListener("click", function () {
      const password3=password.value;
      const checkpassword3=checkpassword.value
        if (password3 === checkpassword3) {
@@ -272,10 +272,9 @@ savee && savee.addEventListener('click',function(){
  document.getElementById("colorPicker").addEventListener("input", function (event) {
      const selectedColor = event.target.value;
      const newDiv = document.createElement("div");
-     newDiv.style.width = "100px";
-     newDiv.style.height = "100px";
+     newDiv.style.width = "50px";
+     newDiv.style.height = "120px";
      newDiv.style.backgroundColor = selectedColor;
-     newDiv.style.marginTop = "10px";
      document.body.appendChild(newDiv);
    });
 
@@ -321,7 +320,7 @@ savee && savee.addEventListener('click',function(){
 // Vazifa: Formada yosh kiritish uchun input bo‘lsin. "Tekshirish" tugmasi bosilganda, foydalanuvchining yoshi 18 yoki undan yuqori bo‘lsa, sahifada "Kirishga ruxsat berildi", aks holda "Kirishga ruxsat berilmaydi" degan matn paydo bo‘lsin.
 // Ishlatiladigan mavzular: value, if.
 const age=document.getElementById('age')
-const btnage = document.getElementById("btn");
+const btnage = document.getElementById("btn777");
 const res=document.getElementById('res')
 
 btnage && btnage.addEventListener('click',function(){
@@ -387,13 +386,13 @@ desc && desc.addEventListener('input',function(){
 //12-Tugmani Faollashtirish
 // Vazifa: Formada bir input va "Tasdiqlash" tugmasi bo‘lsin. Dastlab tugma faol bo‘lmasin (disabled). Inputga biror matn kiritilganda, tugma faollashsin.
 // Ishlatiladigan mavzular: disabled, input hodisasi.
-const text=document.getElementById('text')
-const btnn = document.getElementById("btn");
-text && text.addEventListener('input',function(){
-  if(text.value==''){
-    btnn.disabled=true
+const text1212=document.getElementById('texttttt')
+const btn1212 = document.getElementById("btn1212");
+text1212 && text1212.addEventListener('input',function(){
+  if(text1212.value==''){
+    btn1212.disabled=true
   }else{
-    btnn.disabled=false
+    btn1212.disabled=false
   }
 })
 
@@ -402,13 +401,13 @@ text && text.addEventListener('input',function(){
 //13-Forma Tozalash
 // Vazifa: Formada bir nechta input bo‘lsin (ism, familiya, email). "Tozalash" tugmasi bosilganda, barcha inputlar bo‘shatiladi.
 // Ishlatiladigan mavzular: value.
-const name = document.getElementById("name");
+const name13 = document.getElementById("nameeeee");
 const fami=document.getElementById('fam')
 const email = document.getElementById("email");
 const clear = document.getElementById("clear");
 clear && clear.addEventListener('click',function(){
   fami.value=''
-  name.value=''
+  name13.value=''
   email.value = "";
 })
 
@@ -440,3 +439,4 @@ search && search.addEventListener("input", function () {
 //15-Matnni Tahrirlash
 // Vazifa: Sahifada matn ko‘rinishida bir div bo‘lsin. "Tahrirlash" tugmasi bosilganda, matn inputga aylansin va foydalanuvchi matnni tahrir qilishi mumkin. "Saqlash" tugmasi bosilganda, inputdagi matn yana div ko‘rinishida aks etsin.
 // Ishlatiladigan mavzular: replaceChild, value.
+//2-MASALA BILAN BIR-XIL EKAN
